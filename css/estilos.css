@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+.header .navbar {
+	z-index: 500;
+    min-width: 100%;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+}
+.header .myLogo{
+	background-image: url("../media/LOGO2.png");
+	background-size: 100%;
+	display: block;
+	width: 190px;
+	height: 75px;
+}
+.tituloProductosIndex{
+	text-align: center;
+	color: red;
+	background-image: url('../media/nosotross.jpg');
+}
+.bg-light {
+    background-color: white!important;
+}
+.navbar-light .navbar-nav .nav-link {
+  	display: inline-block;
+	padding: 0 55px;
+	list-style: none;
+    color: #0062cc;
+}
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ffc107;
+}
+.myTexts{
+	font-size: 1.25rem;
+}
+.myTextsLight{
+	font-weight: 300;
+}
+.titulo1{
+	color: #EBEB86;;
+	font-size: 25px;
+}
+
+.titulo2{
+	color: black;
+} 
+
+.tituloEspecial {
+	padding-left: 8px;
+	color:#EBEB86;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.banner{
+	padding-top: 60px;
+	min-height: 300px;
+	height: 50%;
+	background-image: url('../media/tienda.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-flow: row wrap;
+}
+.boxProductos{
+	background:white;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.ofertasDestacadas .mainTitle {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+}
+.ofertasDestacadas .mainSubTitle{
+	font-size: 1rem;
+}
+.ofertasDestacadas .boxProductos .prod .title{
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+}
+.ofertasDestacadas .boxProductos .prod .price{
+	font-size: .8rem;
+}
+.boxTips{
+	background-color: black;
+	padding: 50px;
+	display: flex;
+	flex-flow: column wrap;
+}
+.boxTips .videoResponsive iframe,
+.boxTips .videoResponsive object,
+.boxTips .videoResponsive embed {
+width: 100%;
+height: 500px;
+top: 0;
+left: 0;
+}
+.boxRedes{
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	padding-top: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.boxRedes .tituloRedes{
+	color: #EBEB86;
+	font-size: 30px;
+}
+.fotter{
+	width: 100%;
+	color: #BAA3A3;
+	background-color: black;
+	float: left;
+	padding-top: 10%;
+}
+
+.pinContacto{
+	z-index: 400;
+	position: fixed;
+	width: 55px;
+	height: 60px;
+	bottom: 60px;
+	right: 60px;
+	text-align: center;
+	border-radius: 50px;
+	padding: 50px;
+}
+.espacioBarra
+{
+	padding-top: 100px;
+}
+.contenedorGridProductos {
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    text-align: center;
+    justify-content: stretch;
+    grid-template:
+        "baner" 250px
+        "tit"4%
+        "cat" 26%
+        "mar"2%
+        "prod1"15%
+        "prod2"15%
+        "prod3"15%
+        "prod4"15%
+        "prod5"15%
+        "foter"3%;
+}
+@media (min-width: 600px){
+.contenedorGridProductos{
+		min-height: 100%;
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    text-align: center;
+  justify-content: stretch;
+    grid-template:
+        "baner baner baner" 310px
+        "tit    tit  tit"50px
+        "cat prod1  prod2" 25%
+        "cat prod3  prod4"25%
+        "mar prod5  . "25%
+        "foter foter foter"3%;
+		}
+}
+.contenedorGridProductos__categoriaProductos-div1{
+	padding-left: 10px;
+	color: white;
+}
+.contenedorGridProductos__categoriaProductos-div2{
+	padding-left: 10px;
+	color:white;
+}
+.bannerProductos{
+	grid-area: baner;
+	background-image: url('../media/tienda.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	}
+.sideBar{
+	color: white;
+background-image: url('../media/tienda3.jpg');
+background-size: cover;
+	font-family: 'Overpass', sans-serif;
+	grid-area: cat;
+	font-size: 30px;
+}
+
+.sideBar h3:hover{
+transform: scale(1.1);
+}
+.productos1{
+	grid-area: prod1;
+}
+.productos2{
+	grid-area: prod2;
+}
+.productos3{
+	grid-area: prod3;
+}
+.productos4{ 
+	grid-area: prod4;
+}
+.productos5{ 
+	grid-area: prod5;
+}
+.tituloProductos{
+	grid-area: tit;
+	text-align: center;
+	color: red;
+	background-image: url('../media/nosotross.jpg');
+}
+.tituloProductos h1{
+font-size: 30px;
+}
+
+.marcas{
+	grid-area:mar;
+	background-color: black;
+	background-size: cover;
+	font-family: 'Overpass', sans-serif;
+}
+.fotterGrid{
+	grid-area:foter;
+	color: #BAA3A3;
+	background-color: black;
+	background-size: cover;
+	text-align: left;
+}
+.productos1 .mainTitle{
+	font-size: 1.5rem;
+	font-family: 'Overpass', sans-serif;
+}
+.seccionNosotros{
+	height: 100vh;
+	background-color: black;
+	font-size:25px;
+	text-align: center;
+	padding-top: 100px;
+	color:#EBEB86;
+	display: flex;
+	flex-flow: column;
+}
+
+.formRegistro {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../media/logogrande2.png);
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: right;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.titulo3-Form{
+	color: #FF0000;
+	font-size: 15px;
+}
+.boxContacto1 {
+	padding-top: 150px;
+	height: 100vh;
+	background-image: url(../media/logogrande2.png);
+	background-repeat: no-repeat;
+	background-color: red;
+	background-position: center;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.boxContacto1__titulo1{
+	text-align: center;
+	color: #EBEB86;;
+	font-size: 25px;
+}
+.boxContacto1__titulo1-p{
+	text-align: center;
+	color:red;
+	font-size: 30px;
+}
+
+#carouselExampleCaptions .carousel-caption .d-none .d-md-block{
+	color: red;
+}
+.carousel-indicators li{
+	background-color: #f00;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color:red;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
