@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
 .header .navbar {
 	z-index: 500;
@@ -12,17 +15,12 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
 }
-.header .myLogo{
-	background-image: url("../media/LOGO2.png");
-	background-size: 100%;
-	display: block;
-	width: 190px;
-	height: 75px;
-}
 .tituloProductosIndex{
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 30px;
 	text-align: center;
-	color: red;
-	background-image: url('../media/nosotross.jpg');
+	color: white;
+	background-color: black;
 }
 .bg-light {
     background-color: white!important;
@@ -44,8 +42,8 @@
 	font-weight: 300;
 }
 .titulo1{
-	color: #EBEB86;;
-	font-size: 25px;
+    color: white;
+    font-size: 25px;
 }
 
 .titulo2{
@@ -53,8 +51,9 @@
 } 
 
 .tituloEspecial {
-	padding-left: 8px;
-	color:#EBEB86;
+    padding-left: 8px;
+    color: #007bff;
+    font-size: 1.7rem;
 }
 
 .textCenter{
@@ -116,17 +115,53 @@ left: 0;
 	align-items: center;
 }
 .boxRedes .tituloRedes{
-	color: #EBEB86;
+	color: white;
 	font-size: 30px;
+}
+.boxRedesContacto{
+	background-color: black;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxRedesContacto .tituloRedesContacto{
+	color: white;
+    font-size: 30px;
+}
+@media (max-width: 600px){
+	.boxRedesContacto{
+	background-color: black;
+    padding-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.redIcons{
+width: 200px;
+}
+}
+.redIcons:hover {
+	filter: opacity(.5);
 }
 .fotter{
 	width: 100%;
 	color: #BAA3A3;
 	background-color: black;
+	background-size: cover;
 	float: left;
 	padding-top: 10%;
 }
-
+.fotterContacto{
+	width: 100%;
+	background: linear-gradient(
+178deg, #000000 0%, #212529 100%);
+	background-position: center;
+	background-size: cover;
+	float: left;
+	padding-top: 10%;
+}
 .pinContacto{
 	z-index: 400;
 	position: fixed;
@@ -134,14 +169,24 @@ left: 0;
 	height: 60px;
 	bottom: 60px;
 	right: 60px;
-	text-align: center;
 	border-radius: 50px;
-	padding: 50px;
+}
+@media (min-width: 600px){
+	.pinContacto{
+		z-index: 400;
+	position: fixed;
+	width: 55px;
+	height: 60px;
+	bottom: 60px;
+	right: 60px;
+	border-radius: 50px;
+}
 }
 .espacioBarra
 {
 	padding-top: 100px;
 }
+
 .contenedorGridProductos {
     font-family: 'Overpass', sans-serif;
     display: grid;
@@ -164,39 +209,42 @@ left: 0;
 		min-height: 100%;
     font-family: 'Overpass', sans-serif;
     display: grid;
-    text-align: center;
+    text-align: start;
   justify-content: stretch;
     grid-template:
-        "baner baner baner" 310px
+        "baner baner baner" 350px
         "tit    tit  tit"50px
         "cat prod1  prod2" 25%
         "cat prod3  prod4"25%
-        "mar prod5  . "25%
+        ". prod5  . "25%
         "foter foter foter"3%;
+		}
+		.marcas{
+			display: none;
 		}
 }
 .contenedorGridProductos__categoriaProductos-div1{
 	padding-left: 10px;
-	color: white;
+	color: black;
+	font-family: 'Roboto', sans-serif;
 }
 .contenedorGridProductos__categoriaProductos-div2{
 	padding-left: 10px;
-	color:white;
+	color: black;
+	font-family: 'Roboto', sans-serif;
 }
 .bannerProductos{
 	grid-area: baner;
-	background-image: url('../media/tienda.png');
+	background-image: url('../media/banerProducto2.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	}
 .sideBar{
-	color: white;
-background-image: url('../media/tienda3.jpg');
-background-size: cover;
 	font-family: 'Overpass', sans-serif;
 	grid-area: cat;
 	font-size: 30px;
+	padding-left: 9px;
 }
 
 .sideBar h3:hover{
@@ -220,8 +268,8 @@ transform: scale(1.1);
 .tituloProductos{
 	grid-area: tit;
 	text-align: center;
-	color: red;
-	background-image: url('../media/nosotross.jpg');
+	color: white;
+	background-color: black;
 }
 .tituloProductos h1{
 font-size: 30px;
@@ -229,9 +277,9 @@ font-size: 30px;
 
 .marcas{
 	grid-area:mar;
-	background-color: black;
-	background-size: cover;
 	font-family: 'Overpass', sans-serif;
+	background-size: cover;
+	background-color: black;
 }
 .fotterGrid{
 	grid-area:foter;
@@ -245,53 +293,103 @@ font-size: 30px;
 	font-family: 'Overpass', sans-serif;
 }
 .seccionNosotros{
-	height: 100vh;
-	background-color: black;
+	min-height: 100vh;
+	padding-top: 100px;
+	width: 100%;
+	background-image: url(../media/fondoNosotros.jpg);
+	background-position: cover;
 	font-size:25px;
 	text-align: center;
-	padding-top: 100px;
-	color:#EBEB86;
+	color:white;
 	display: flex;
 	flex-flow: column;
 }
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-image: url(../media/fondoNosotros.jpg);
+    border-bottom: 1px solid #212529;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(0 123 255 / 43%);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;}
 
+.textoNosotros{
+	font-family: 'Scheherazade New', serif;
+	color: red;
+}
+.btn-link {
+    color: #f8f9fa;
+    font-size: 28px;
+}
+.btn-link:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
 .formRegistro {
 	width: 100%;
 	height: 100vh;
-	background-image: url(../media/logogrande2.png);
+	background-image: url(../media/registrate.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: black;
-	background-position: right;
+	background-position: center;
 	padding-top: 20px;
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
 	justify-content: space-around;
 }
+@media (max-width: 600px){
+	.formRegistro{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    padding-top: 120px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: solid;
+	}
+}
 .titulo3-Form{
-	color: #FF0000;
-	font-size: 15px;
+	color: #f8f9fa;
+    background-color: #343a405e;
+    font-size: 15px
 }
 .boxContacto1 {
 	padding-top: 150px;
-	height: 100vh;
-	background-image: url(../media/logogrande2.png);
-	background-repeat: no-repeat;
-	background-color: red;
-	background-position: center;
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
+    height: 100vh;
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../media/fondoContacto3.jpg);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 .boxContacto1__titulo1{
-	text-align: center;
-	color: #EBEB86;;
-	font-size: 25px;
+	background-color: rgb(0 0 0 / 19%);
+	border-radius: 40px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
 }
 .boxContacto1__titulo1-p{
 	text-align: center;
-	color:red;
-	font-size: 30px;
+    border-radius: 40px;
+    color: white;
+    font-size: 30px;
 }
 
 #carouselExampleCaptions .carousel-caption .d-none .d-md-block{
@@ -306,4 +404,16 @@ font-size: 30px;
 p {
     margin-top: 0;
     margin-bottom: 0rem;
+}
+.btn {
+	border-radius: 1.5rem;
+	border: none;
+}
+
+.btn-primary{
+	background-color: #212529;
+}
+.navbar-brand {
+    font-size: 2.1rem;
+    font-family: 'Baloo Paaji 2', cursive;
 }

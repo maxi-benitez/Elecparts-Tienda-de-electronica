@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header .navbar {
+  z-index: 500;
+  min-width: 100%;
+  position: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+}
+.tituloProductosIndex {
+  text-align: center;
+  color: red;
+  background-image: url("../media/nosotross.jpg");
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  display: inline-block;
+  padding: 0 55px;
+  list-style: none;
+  color: #0062cc;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ffc107;
+}
+
+.navbar-light .navbar-nav .nav-link.show {
+  color: #ffc107;
+}
+
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ffc107;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #ffc107;
+}
+
+.myTexts {
+  font-size: 1.25rem;
+}
+
+.myTextsLight {
+  font-weight: 300;
+}
+
+.titulo1 {
+  color: white;
+  font-size: 25px;
+}
+
+.titulo2 {
+  color: black;
+}
+
+.tituloEspecial {
+  padding-left: 8px;
+  color: #EBEB86;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.banner {
+  padding-top: 60px;
+  min-height: 300px;
+  height: 50%;
+  background-image: url("../media/tienda.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.boxProductos {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ofertasDestacadas .mainTitle {
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.ofertasDestacadas .mainSubTitle {
+  font-size: 1rem;
+}
+
+.ofertasDestacadas .boxProductos .prod .title {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.ofertasDestacadas .boxProductos .prod .price {
+  font-size: .8rem;
+}
+
+.boxTips {
+  background-color: black;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.boxTips .videoResponsive iframe {
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
+.boxTips .videoResponsive object {
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
+.boxTips .videoResponsive embed {
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
+.boxRedes {
+  background: linear-gradient(90deg, black 0%, white 100%);
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxRedes .tituloRedes {
+  color: #EBEB86;
+  font-size: 30px;
+}
+
+.boxRedesContacto {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxRedesContacto .tituloRedesContacto {
+  color: white;
+  font-size: 30px;
+}
+
+.redIcons:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.fotter {
+  width: 100%;
+  color: #BAA3A3;
+  background-color: black;
+  background-size: cover;
+  float: left;
+  padding-top: 10%;
+}
+
+.fotterContacto {
+  width: 100%;
+  background: linear-gradient(178deg, #000000 0%, #212529 100%);
+  background-position: center;
+  background-size: cover;
+  float: left;
+  padding-top: 10%;
+}
+
+.pinContacto {
+  z-index: 400;
+  position: fixed;
+  width: 55px;
+  height: 60px;
+  bottom: 60px;
+  right: 60px;
+  border-radius: 50px;
+}
+
+.espacioBarra {
+  padding-top: 100px;
+}
+
+.contenedorGridProductos {
+  font-family: 'Overpass', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  grid-template: "baner" 250px "tit" 4% "cat" 26% "mar" 2% "prod1" 15% "prod2" 15% "prod3" 15% "prod4" 15% "prod5" 15% "foter" 3%;
+}
+
+.contenedorGridProductos__categoriaProductos-div1 {
+  padding-left: 10px;
+  color: white;
+}
+
+.contenedorGridProductos__categoriaProductos-div2 {
+  padding-left: 10px;
+  color: white;
+}
+
+.bannerProductos {
+  grid-area: baner;
+  background-image: url("../media/banerProducto2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sideBar {
+  color: white;
+  background-image: url("../media/tienda3.jpg");
+  background-size: cover;
+  font-family: 'Overpass', sans-serif;
+  grid-area: cat;
+  font-size: 30px;
+}
+
+.sideBar h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.productos1 {
+  grid-area: prod1;
+}
+
+.productos1 .mainTitle {
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.productos2 {
+  grid-area: prod2;
+}
+
+.productos3 {
+  grid-area: prod3;
+}
+
+.productos4 {
+  grid-area: prod4;
+}
+
+.productos5 {
+  grid-area: prod5;
+}
+
+.tituloProductos {
+  grid-area: tit;
+  text-align: center;
+  color: red;
+  background-image: url("../media/nosotross.jpg");
+}
+
+.tituloProductos h1 {
+  font-size: 30px;
+}
+
+.marcas {
+  grid-area: mar;
+  background-color: black;
+  background-size: cover;
+  font-family: 'Overpass', sans-serif;
+}
+
+.fotterGrid {
+  grid-area: foter;
+  color: #BAA3A3;
+  background-color: black;
+  background-size: cover;
+  text-align: left;
+}
+
+.seccionNosotros {
+  min-height: 100vh;
+  padding-top: 100px;
+  width: 100%;
+  background-image: url(../media/fondoNosotros.jpg);
+  background-position: cover;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-image: url(../media/fondoNosotros.jpg);
+  border-bottom: 1px solid #212529;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  background-color: rgb(0 123 255 / 43%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+}
+
+.textoNosotros {
+  font-family: 'Scheherazade New', serif;
+  color: red;
+}
+
+.btn-link {
+  color: #f8f9fa;
+  font-size: 28px;
+}
+
+.btn-link:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.formRegistro {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../media/registrate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.titulo3-Form {
+  color: #f8f9fa;
+  background-color: #343a405e;
+  font-size: 15px;
+}
+
+.boxContacto1 {
+  padding-top: 150px;
+  height: 100vh;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../media/fondoContacto3.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxContacto1__titulo1 {
+  border-radius: 40px;
+  text-align: center;
+    background-color: rgb(0 0 0 / 19%);
+  color: white;
+  font-size: 30px;
+}
+
+.boxContacto1__titulo1-p {
+  text-align: center;
+  border-radius: 40px;
+  color: white;
+  font-size: 30px;
+}
+
+#carouselExampleCaptions .carousel-caption .d-none .d-md-block {
+  color: red;
+}
+
+.carousel-indicators li {
+  background-color: #f00;
+}
+
+.carousel-control-next-icon {
+  background-color: red;
+}
+
+.carousel-control-prev-icon {
+  background-color: red;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.btn {
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #e93748;
+}
+
+@media (max-width: 600px) {
+  .boxRedesContacto {
+    background-color: black;
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .redIcons {
+    width: 200px;
+  }
+  .formRegistro {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    padding-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: solid;
+  }
+}
+
+@media (min-width: 600px) {
+  .pinContacto {
+    z-index: 400;
+    position: fixed;
+    width: 55px;
+    height: 60px;
+    bottom: 60px;
+    right: 60px;
+    border-radius: 50px;
+  }
+  .contenedorGridProductos {
+    min-height: 100%;
+    font-family: 'Overpass', sans-serif;
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    grid-template: "baner baner baner" 350px "tit    tit  tit" 50px "cat prod1  prod2" 25% "cat prod3  prod4" 25% "mar prod5  . " 25% "foter foter foter" 3%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
