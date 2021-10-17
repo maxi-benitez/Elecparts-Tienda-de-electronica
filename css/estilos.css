@@ -305,10 +305,7 @@ font-size: 30px;
 	flex-flow: column;
 }
 .card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-    background-image: url(../media/fondoNosotros.jpg);
-    border-bottom: 1px solid #212529;
+background-color: #292121d4;
 }
 .card {
     position: relative;
