@@ -1,0 +1,48 @@
+[33mcommit f5fe58b8a277fdd55dff4c25c0e69b531fb3bc25[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Sun Oct 31 12:52:21 2021 -0300
+
+    Cambios en foter,productos y visual de la pagina
+
+[33mcommit 02d7a4f8e608a0ebacd6b2856eda750ad95c50cd[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Sat Oct 16 23:54:36 2021 -0300
+
+    correccion de errores2
+
+[33mcommit 696fa5c9434e39549ed13fa1ba530d3ccd3cfce3[m
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Sat Oct 16 23:40:59 2021 -0300
+
+    correccion de errores
+
+[33mcommit 0c569915eb7042960657e7b82abd2483dbc845a0[m
+Merge: 0ed3cc7 78dcac9
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Thu Oct 14 20:56:54 2021 -0300
+
+    Merge branch 'main' of https://github.com/maxi-benitez/Elecparts-Tienda-de-electronica
+
+[33mcommit 0ed3cc72c241d4071638712ed35eecb276c1a322[m[33m ([m[1;32mtemporal[m[33m)[m
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Thu Oct 14 20:28:47 2021 -0300
+
+    Modificacion de estetica y responsive
+
+[33mcommit 78dcac9e4a834a836198afde5ecda45f0583d449[m
+Author: maxi-benitez <92106395+maxi-benitez@users.noreply.github.com>
+Date:   Tue Oct 12 23:34:07 2021 -0300
+
+    Rename Index.html to index.html
+
+[33mcommit f590895222b26393f1e644961e8293e7d15e9483[m
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Tue Oct 12 23:22:41 2021 -0300
+
+    Agregando Proyecto final Elecparts
+
+[33mcommit 513ab9761e198a913c738cd4b1756decf237512f[m
+Author: Maxi Benitez <maxi.benitez9@hotmail.com>
+Date:   Tue Oct 12 23:10:09 2021 -0300
+
+    initial commit
