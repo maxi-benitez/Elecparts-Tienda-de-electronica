@@ -7,7 +7,8 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
-}
+}     
+/*header*/
 .header .navbar {
 	z-index: 500;
     min-width: 100%;
@@ -22,18 +23,19 @@
 	color: white;
 	background-color: black;
 }
+@media (max-width: 600px){
+	.tituloProductosIndex{
+		font-size:17px;
+	}
+}
 .bg-light {
     background-color: white!important;
 }
 .navbar-light .navbar-nav .nav-link {
   	display: inline-block;
-	padding: 0 55px;
+	padding: 0 26px;
 	list-style: none;
     color: #0062cc;
-}
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #ffc107;
 }
 .myTexts{
 	font-size: 1.25rem;
@@ -45,51 +47,58 @@
     color: white;
     font-size: 25px;
 }
-
 .titulo2{
 	color: black;
 } 
-.titulo3 {
-    text-align: center;
-    color: white;
-    background-color: black;
-    background-size: cover;
-    padding-top: 80px;
-}
-.form-control {
-    background-color: #212529;
+.titulo3{
+	text-align: center;
+	color: white;
+	background-color: black;
+	background-size: cover;
+	padding-top: 80px;
 }
 .tituloEspecial {
     padding-left: 8px;
     color: #007bff;
     font-size: 1.7rem;
 }
-
+.linkHeader{
+	background-color: #343a40;
+    color: #f8f9fa;
+}
 .textCenter{
 	text-align: center;
 }
-
 .banner{
-	padding-top: 60px;
-	min-height: 300px;
-	height: 50%;
-	background-image: url('../media/tienda.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-flow: row wrap;
+	padding-top: 70px;
 }
 .boxProductos{
 	background:white;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	text-align: center;
+}
+.boxProductos img:hover{
+transform: scale(0.9);
 }
 .ofertasDestacadas .mainTitle {
-    color: black;
+    color: white;
+    background: radial-gradient(#007bff, transparent);
     font-size: 1.5rem;
     font-family: 'Overpass', sans-serif;
+}
+.prod{
+	border-style: ridge;
+}
+
+@media(max-width: 600px){
+	.ofertasDestacadas .mainTitle{
+		font-size: 17px;
+	}
+	.ofertasDestacadas .mainTitle img{
+		width: 20px;
+	}
 }
 .ofertasDestacadas .mainSubTitle{
 	font-size: 1rem;
@@ -116,7 +125,7 @@ top: 0;
 left: 0;
 }
 .boxRedes{
-	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #212529 100%);
 	padding-top: 30px;
 	display: flex;
 	flex-flow: row wrap;
@@ -138,6 +147,10 @@ left: 0;
 	color: white;
     font-size: 30px;
 }
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    font-size: 16px;
+    background-color: #212529;
+}
 @media (max-width: 600px){
 	.boxRedesContacto{
 	background-color: black;
@@ -151,13 +164,16 @@ left: 0;
 width: 200px;
 }
 }
+.redIcons:hover {
+	filter: opacity(.5);
+}
 .form-inline {
 	justify-content:center;
 	background-color: black;
 	background-size: cover;
 	}
-.redIcons:hover {
-	filter: opacity(.5);
+.form-control{
+	background-color: #212529;
 }
 .fotter{
 	width: 100%;
@@ -165,7 +181,6 @@ width: 200px;
 	background-color: black;
 	background-size: cover;
 	float: left;
-	padding-top: 10%;
 }
 .fotterContacto{
 	width: 100%;
@@ -185,53 +200,44 @@ width: 200px;
 	right: 60px;
 	border-radius: 50px;
 }
-@media (min-width: 600px){
-	.pinContacto{
-		z-index: 400;
-	position: fixed;
-	width: 55px;
-	height: 60px;
-	bottom: 60px;
-	right: 60px;
-	border-radius: 50px;
-}
-}
 .espacioBarra
 {
 	padding-top: 100px;
 }
-
 .contenedorGridProductos {
     font-family: 'Overpass', sans-serif;
     display: grid;
     text-align: center;
-    justify-content: stretch;
+    justify-content: center;
     grid-template:
         "baner" 250px
-        "tit"4%
-        "cat" 26%
-        "mar"2%
-        "prod1"15%
-        "prod2"15%
-        "prod3"15%
-        "prod4"15%
-        "prod5"15%
-        "foter"3%;
+        "tit"2%
+        "cat" 15%
+        "mar"1%
+        "prod1"9%
+        "prod2"9%
+        "prod3"9%
+        "prod4"9%
+        "prod5"9%
+        "prod6"9%
+        "prod7"9%
+        "prod8"9%
+        "foter"14%;
 }
 @media (min-width: 600px){
 .contenedorGridProductos{
-		min-height: 100%;
+	min-height: 100%;
     font-family: 'Overpass', sans-serif;
-    display: grid;
-    text-align: start;
-  justify-content: stretch;
+    text-align: center;
+  justify-content: inherit;
     grid-template:
         "baner baner baner" 350px
         "tit    tit  tit"50px
-        "cat prod1  prod2" 25%
-        "cat prod3  prod4"25%
-        ". prod5  . "25%
-        "foter foter foter"3%;
+        "cat prod1  prod2" 15%
+        "cat prod3  prod4"15%
+        ". prod5  prod6 "15%
+        ". prod7  prod8" 15%
+        "foter foter foter"27%;
 		}
 		.marcas{
 			display: none;
@@ -247,6 +253,9 @@ width: 200px;
 	color: black;
 	font-family: 'Roboto', sans-serif;
 }
+.boxRedes img:hover{
+transform: scale(0.9);
+}
 .bannerProductos{
 	grid-area: baner;
 	background-image: url('../media/banerProducto2.png');
@@ -260,24 +269,56 @@ width: 200px;
 	font-size: 30px;
 	padding-left: 9px;
 }
-
 .sideBar h3:hover{
 transform: scale(1.1);
 }
 .productos1{
 	grid-area: prod1;
 }
+.productos1 img:hover{
+transform: scale(0.9);
+}
 .productos2{
 	grid-area: prod2;
+}
+.productos2 img:hover{
+transform: scale(0.9);
 }
 .productos3{
 	grid-area: prod3;
 }
+.productos3 img:hover{
+transform: scale(0.9);
+}
 .productos4{ 
 	grid-area: prod4;
 }
+.productos4 img:hover{
+transform: scale(0.9);
+}
 .productos5{ 
 	grid-area: prod5;
+}
+.productos5 img:hover{
+transform: scale(0.9);
+}
+.productos6{ 
+	grid-area: prod6;
+}
+.productos6 img:hover{
+transform: scale(0.9);
+}
+.productos7{ 
+	grid-area: prod7;
+}
+.productos7 img:hover{
+transform: scale(0.9);
+}
+.productos8{ 
+	grid-area: prod8;
+}
+.productos8 img:hover{
+transform: scale(0.9);
 }
 .tituloProductos{
 	grid-area: tit;
@@ -288,14 +329,16 @@ transform: scale(1.1);
 .tituloProductos h1{
 font-size: 30px;
 }
-
 .marcas{
 	grid-area:mar;
 	font-family: 'Overpass', sans-serif;
 	background-size: cover;
 	background-color: black;
 }
-.fotterGrid{
+.infoMapa{
+	grid-area:map;
+}
+.fotter{
 	grid-area:foter;
 	color: #BAA3A3;
 	background-color: black;
@@ -319,7 +362,10 @@ font-size: 30px;
 	flex-flow: column;
 }
 .card-header {
-background-color: #292121d4;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #343a40;
+    border-bottom: 1px solid #212529;
 }
 .card {
     position: relative;
@@ -332,8 +378,11 @@ background-color: #292121d4;
     background-color: rgb(0 123 255 / 43%);
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;}
-
+    border-radius: .25rem;
+}
+.card-body{
+	color: white;
+}
 .textoNosotros{
 	font-family: 'Scheherazade New', serif;
 	color: red;
@@ -361,17 +410,25 @@ background-color: #292121d4;
 }
 @media (max-width: 600px){
 	.formRegistro{
+	min-height: 100vh;
     width: 100%;
-    height: 100vh;
-    background-color: black;
-    background-size: cover;
+    height: 100%;
     padding-top: 120px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
     border: solid;
 	}
+}
+.formIngresar{
+		width: 100%;
+	height: 100vh;
+	background-image: url(../media/tienda.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-around;
 }
 .titulo3-Form{
 	color: #f8f9fa;
@@ -379,8 +436,8 @@ background-color: #292121d4;
     font-size: 15px
 }
 .boxContacto1 {
-	padding-top: 150px;
-    height: 100vh;
+	min-height: 160vh;
+	padding-top: 120px;
     background: no-repeat;
     background-position: center;
     background-size: cover;
@@ -402,15 +459,20 @@ background-color: #292121d4;
     color: white;
     font-size: 30px;
 }
-
-#carouselExampleCaptions .carousel-caption .d-none .d-md-block{
-	color: red;
+.preguntasFrecuentes{
+	background-color: black;
+	padding: 8px;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
 }
-.carousel-indicators li{
-	background-color: #f00;
+.accordion {
+	padding-bottom: 80px;
+	background-color: black;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
-	background-color:red;
+.carousel-item{
+	transition: none;
 }
 p {
     margin-top: 0;
@@ -420,7 +482,6 @@ p {
 	border-radius: 1.5rem;
 	border: none;
 }
-
 .btn-primary{
 	background-color: #212529;
 }
